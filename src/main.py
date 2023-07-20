@@ -1,8 +1,11 @@
 import pygame
 import sys
 
+
 from const import *
 from game import Game
+
+
 
 class Main:
 
@@ -19,7 +22,8 @@ class Main:
         game = self.game
         
         while True:
-            self.game.show_bg(self.screen)
+            game.show_bg(screen)
+            game.show_pieces(screen, game.board)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:

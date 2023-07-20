@@ -1,4 +1,4 @@
-from const import *
+import os
 
 class Piece:
 
